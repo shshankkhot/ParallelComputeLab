@@ -1,0 +1,15 @@
+Rating:4.0-others	1372
+Rating:2.0-reviews-comments	13
+Rating:5.0-others	4103
+Rating:1.0	2524
+Rating:5.0-reviews-comments	66
+Rating:1.0-others	2483
+Rating:3.0	983
+Rating:5.0	4179
+Rating:1.0-reviews-comments	39
+Rating:2.0-others	901
+Rating:4.0-reviews-comments	27
+Rating:3.0-others	970
+Rating:2.0	914
+Rating:3.0-reviews-comments	13
+Rating:4.0	1400
