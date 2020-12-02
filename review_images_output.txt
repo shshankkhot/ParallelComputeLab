@@ -1,0 +1,4 @@
+Rating1-2-with-#images	4
+NeagtiveRating-with-image	4
+PositiveRating-with-image	3
+Rating4-5-with-#image	4

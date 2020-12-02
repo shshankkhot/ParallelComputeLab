@@ -1,0 +1,22 @@
+javac -cp /opt/cloudera/parcels/CDH/lib/hadoop/client/*:/opt/cloudera/parcels/CDH/lib/hbase/* AmazonReviewWithImages.java -d build -Xlint
+
+jar -cvf process_reviews.jar -C build/ .
+
+hadoop fs -rm -r /user/skhot/review_with_images
+
+HADOOP_CLASSPATH=$(hbase mapredcp):/etc/hbase/conf hadoop jar process_reviews.jar AmazonReviewWithImages '/user/skhot/review_with_images'
+
+hadoop fs -cat /user/skhot/review_with_images/* > review_images_output.txt
+
+----------------------------------------------------------------
+AmazonReviewContainsComentsReview
+
+javac -cp /opt/cloudera/parcels/CDH/lib/hadoop/client/*:/opt/cloudera/parcels/CDH/lib/hbase/* AmazonReviewContainsComentsReview.java -d build -Xlint
+
+jar -cvf process_reviews_comments.jar -C build/ .
+
+hadoop fs -rm -r /user/skhot/review_with_images
+
+HADOOP_CLASSPATH=$(hbase mapredcp):/etc/hbase/conf hadoop jar process_reviews_comments.jar AmazonReviewContainsComentsReview '/user/skhot/review_comments'
+
+hadoop fs -cat /user/skhot/review_comments/* > review_comments_output.txt
