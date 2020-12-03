@@ -60,7 +60,7 @@ public class AmazonReviewContainsComentsReview extends Configured implements Too
 
     		// This helper will configure how table data feeds into the "map" method
 		TableMapReduceUtil.initTableMapperJob(
-			"rfox12:reviews_10000",        	// input HBase table name
+			"rfox12:reviews",        	// input HBase table name
 			scan,             		// Scan instance to control CF and attribute selection
 			MapReduceMapper.class,   	// Mapper class
 			Text.class,             	// Mapper output key
@@ -123,7 +123,7 @@ public class AmazonReviewContainsComentsReview extends Configured implements Too
 					
 				
 				String review = jsonObject.get("reviewText").getAsString();
-				if (review.contains("reviews") || review.contains("coments"))
+				if (review.contains("reviews") || review.contains("comments"))
 				{					
 					context.write(new Text("Rating:"+jsonObject.get("overall").getAsString()+"-reviews-comments"),one);
 				}
