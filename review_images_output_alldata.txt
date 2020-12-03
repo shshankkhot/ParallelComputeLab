@@ -1,0 +1,4 @@
+Rating1-2-with-#images	685356
+NeagtiveRating-with-image	560490
+PositiveRating-with-image	1796548
+Rating4-5-with-#image	3537685

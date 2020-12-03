@@ -1,0 +1,17 @@
+Rating:0.0	3
+Rating:0.0-others	3
+Rating:1.0	9262262
+Rating:1.0-others	8873936
+Rating:1.0-reviews-comments	386043
+Rating:2.0	6879799
+Rating:2.0-others	6635284
+Rating:2.0-reviews-comments	243615
+Rating:3.0	12261920
+Rating:3.0-others	11969788
+Rating:3.0-reviews-comments	290063
+Rating:4.0	25941805
+Rating:4.0-others	25407373
+Rating:4.0-reviews-comments	526988
+Rating:5.0	99525453
+Rating:5.0-others	98030064
+Rating:5.0-reviews-comments	1441679
