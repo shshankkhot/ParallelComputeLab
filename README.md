@@ -1,4 +1,8 @@
 // #ParallelComputeLab
+--
+Question : Do reviews that mention "reviews" or "comments" differ from the overall reviews in terms of "overall" rating?
+--
+Distributon of rating for reviews with  "reviews" or "comments" compare to "Others" and Total Review counts with reviews
 ----------------------------------------------------------------
 //AmazonReviewContainsComentsReview
 ----------------------------------------------------------------
