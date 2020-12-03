@@ -19,7 +19,5 @@ hadoop fs -rm -r /user/skhot/review_comments
 HADOOP_CLASSPATH=$(hbase mapredcp):/etc/hbase/conf hadoop jar process_reviews_comments.jar AmazonReviewContainsComentsReview '/user/skhot/review_comments'
 ----------------------------------------------------------------
 //Step 5 Write Output to file
-//hadoop fs -cat /user/skhot/review_comments/* > review_comments_output.txt
-
 hadoop fs -cat /user/skhot/review_comments/* | sort -n > review_comments_output.txt
 ----------------------------------------------------------------
